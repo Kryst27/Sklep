@@ -1,0 +1,16 @@
+﻿@model List<Person>
+@{
+    ViewData["Title"] = "Privacy Policy";
+    var day = DateTime.Now.DayOfWeek;
+}
+<h1>@ViewData["Title"]</h1>
+@{
+    if (day==DayOfWeek.Saturday)
+    {
+        <p>Dupa jest @day</p>
+    }
+    var currentyear = DateTime.Now.DayOfWeek;
+}
+<p>Use this page to detail your site's privacy policy. @currentyear</p>
+<p href="mailto:dupa@gmail.com">dupa@gmail.com</p>
+@Model
