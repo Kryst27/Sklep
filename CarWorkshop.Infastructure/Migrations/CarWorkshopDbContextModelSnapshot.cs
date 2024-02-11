@@ -30,6 +30,9 @@ namespace CarWorkshop.Infastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("About")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("Create")
                         .HasColumnType("datetime2");
 
