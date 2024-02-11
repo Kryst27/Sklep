@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CarWorkshop.Infastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class PierwszaMigracja : Migration
+    public partial class pierwsza : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
