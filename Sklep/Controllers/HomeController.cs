@@ -37,6 +37,19 @@ namespace Sklep.Controllers
             };
             return View(people);
         }
+        public IActionResult About()
+        {
+            var about = new List<AboutModel>()
+            {
+                new AboutModel()
+                {
+                    Title="O nas",
+                    Description ="Jesteśmy firmą z wieloletnim doświadczeniem na rynku części samochodowych",
+                    tags = new string[] {"Auta", "Części"}
+                }
+            };
+            return View(about);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

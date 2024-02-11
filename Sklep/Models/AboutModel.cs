@@ -1,0 +1,10 @@
+﻿namespace Sklep.Models
+{
+    public class AboutModel
+    {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string[] tags { get; set; }
+
+    }
+}

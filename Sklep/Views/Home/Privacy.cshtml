@@ -12,5 +12,9 @@
     var currentyear = DateTime.Now.DayOfWeek;
 }
 <p>Use this page to detail your site's privacy policy. @currentyear</p>
-<p href="mailto:dupa@gmail.com">dupa@gmail.com</p>
-@Model
+<p href="mailto:Przykladowy@gmail.com">Przykladowy@gmail.com</p>
+
+@foreach(var person in Model)
+{
+    <p>@person.Name, @person.Surname, @person.Age</p>
+}
