@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Sklep.Controllers
 {
-    public class CarWorkshopConntroler : Controller
+    public class CarWorkshopController : Controller
     {
         public ICarWorkshopServices _carworkshopServices;
-        public CarWorkshopConntroler(ICarWorkshopServices carWorkshopServices) 
+        public CarWorkshopController(ICarWorkshopServices carWorkshopServices) 
         {
             _carworkshopServices =carWorkshopServices;
 
