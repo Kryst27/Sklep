@@ -1,4 +1,5 @@
-﻿using CarWorkshop.Infastructure.Presistance;
+using CarWorkshop.Infastructure.Presistance;
+using CarWorkshop.Infastructure.Repository;
 using CarWorkshop.Infastructure.Seeder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
