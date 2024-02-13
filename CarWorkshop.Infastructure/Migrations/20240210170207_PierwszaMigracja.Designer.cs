@@ -4,6 +4,7 @@ using CarWorkshop.Infastructure.Presistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarWorkshop.Infastructure.Migrations
 {
     [DbContext(typeof(CarWorkshopDbContext))]
-    partial class CarWorkshopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240210170207_PierwszaMigracja")]
+    partial class PierwszaMigracja
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
