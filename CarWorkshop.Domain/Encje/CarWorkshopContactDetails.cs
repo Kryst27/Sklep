@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CarWorkshop.Domain.Encje
 {
     public class CarWorkshopContactDetails
-    {
+    { 
         public int Id { get; set; } 
         public string? PhoneNumber { get; set; }
         public string? Street { get; set; }
